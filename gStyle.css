@@ -21,9 +21,10 @@
         transform-origin: bottom;
      }
      [Id*=logout]{
-         font-size:20px;
          align:center;
+         display:inline;
          float:right;
+         font-size:20px;
          margin-right:14%;
      }
      [Id*=outTxt]{
