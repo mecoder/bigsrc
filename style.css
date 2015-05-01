@@ -1,0 +1,16 @@
+*{
+	font-family:'ubuntu',sans-serif;
+}
+body{
+	background-image:url(http://www.hdwalls.website/images/11630-subtle-patterns.jpg);
+}
+.btn{
+	color: black ;
+	border-top: 1px solid #c0ffff ;
+	border-right: 1px solid #00f ;
+	border-bottom: 1px solid #00f ;
+	border-left: 1px solid #c0ffff ;	
+}
+.btn:hover{
+	background-color:#fffee0;		
+}
