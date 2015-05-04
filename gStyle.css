@@ -1,37 +1,50 @@
-*{
+<apex:page >
+    <style>
+        *{
          font-family: 'Ubuntu',sans-serif;
          font-size:15px;
       }
       body{
         //  background-image:url(http://www.picviw.com/wp-content/uploads/2014/02/solid-color-wallpaper-border.jpg);
        // background-image:url(http://www.wallulung.com/wp-content/uploads/2015/03/light_abstract_wallpaper_5163_Amazing_Cool.jpg);
-       //background-image:url(http://www.hdwalls.website/images/11630-subtle-patterns.jpg);
+     //  background-image:url(http://www.hdwalls.website/images/11630-subtle-patterns.jpg);
        background-color: #32e1ed;
          background-image: url(http://www.transparenttextures.com/patterns/45-degree-fabric-dark.png);
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+          background-repeat:repeat;
       }
-      .divs{
-         display:inline;
+      div #big{
+          display:inline;
+      }
+      div #logout{
+          display:inline;
+          float:right;
+          margin-top:10px;
       }
      .logo{
          width:100px;
          height:100px;
      }
-     table{
+     table:not(.dynamicTbl){
          -webkit-border-radius: 8px;
          -moz-border-radius: 8px;
          border-radius: 8px;
-        -webkit-box-shadow: 0px 9px 0px rgba(200,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
-        -moz-box-shadow: 0px 9px 0px rgba(200,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
-        box-shadow: 0px 9px 0px rgba(200,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+        -webkit-box-shadow: 0px 9px 0px #32e1ed, 0px 9px 25px rgba(0,0,0,.7);
+        -moz-box-shadow: 0px 9px 0px #32e1ed, 0px 9px 25px rgba(0,0,0,.7);
+        box-shadow: 0px 9px 0px lightgrey, 0px 9px 25px rgba(0,0,0,.7);
         transform-origin: bottom;
+        //32e1ed
+     }
+     .dynamicTbl]{
+        
      }
      [Id*=logout]{
-         align:center;
-         display:inline;
-         float:right;
+         color:aqua;
          font-size:20px;
-         margin-right:14%;
+         margin-right:12%;
+     }
+     [id*=logout]:hover{
+            color:red;
+            transform:scale(1.1);
      }
      [Id*=outTxt]{
          color:red;
@@ -97,7 +110,7 @@
      }
      .leftBtns{
          float:right;
-         margin-right:16%;
+         margin-right:18%;
      }
     .tabPanel{
         
@@ -118,3 +131,5 @@
         font-family:'Ubuntu',sans-serif;
         font-size:20px;
     }
+    </style>
+</apex:page>
