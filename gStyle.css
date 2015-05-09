@@ -1,16 +1,32 @@
-<apex:page >
-    <style>
-        *{
+    *{
          font-family: 'Ubuntu',sans-serif;
          font-size:15px;
       }
-      body{
-        //  background-image:url(http://www.picviw.com/wp-content/uploads/2014/02/solid-color-wallpaper-border.jpg);
-       // background-image:url(http://www.wallulung.com/wp-content/uploads/2015/03/light_abstract_wallpaper_5163_Amazing_Cool.jpg);
-     //  background-image:url(http://www.hdwalls.website/images/11630-subtle-patterns.jpg);
-       background-color: #32e1ed;
-         background-image: url(http://www.transparenttextures.com/patterns/45-degree-fabric-dark.png);
-          background-repeat:repeat;
+      .hide{
+          display:none;
+      }
+      .unhide{
+          display:block;
+      }
+      table{
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          border-radius: 8px;
+         -webkit-box-shadow: 0px 9px 0px azure, 0px 9px 25px rgba(0,0,0,.7);
+         -moz-box-shadow: 0px 9px 0px azure, 0px 9px 25px rgba(0,0,0,.7);
+         box-shadow: 0px 9px 0px azure, 0px 9px 25px rgba(0,0,0,.7);
+         transform-origin: bottom;
+      }
+      #header, #error, #body, #footerImage, #footer{
+          clear:both;
+          display:block;
+          width:100%;
+      }
+      #header, #footerImage, #footer{
+          background-color:Gainsboro;
+      }
+      #error{
+          min-height:1px;
       }
       div #big{
           display:inline;
@@ -24,19 +40,6 @@
          width:100px;
          height:100px;
      }
-     table:not(.dynamicTbl){
-         -webkit-border-radius: 8px;
-         -moz-border-radius: 8px;
-         border-radius: 8px;
-        -webkit-box-shadow: 0px 9px 0px #32e1ed, 0px 9px 25px rgba(0,0,0,.7);
-        -moz-box-shadow: 0px 9px 0px #32e1ed, 0px 9px 25px rgba(0,0,0,.7);
-        box-shadow: 0px 9px 0px lightgrey, 0px 9px 25px rgba(0,0,0,.7);
-        transform-origin: bottom;
-        //32e1ed
-     }
-     .dynamicTbl]{
-        
-     }
      [Id*=logout]{
          color:aqua;
          font-size:20px;
@@ -48,14 +51,12 @@
      }
      [Id*=outTxt]{
          color:red;
-         
+         font-weight:bold;
      }
      .tbl{
          font-family: 'Ubuntu',sans-serif;
          width:100%;
          padding:25px;
-         cellspacing:55;
-         border:solid;
          
      }
      .selectOption{
@@ -85,7 +86,7 @@
          padding:2px;
      }
      .inputArea{
-         width:600px;
+         width:90%;
          heigth:900px;
          overflow:scroll;
          padding:2px;
@@ -105,15 +106,14 @@
          
      }
      .btnStyle{
-         font-family:'Ubuntu',sans-serif;
-         border: 1px outser #c0ffff ;
+         font-family:'Ubuntu',sans-serif;!Important;
+         border: 1px outset #c0ffff ;!Important;
      }
      .leftBtns{
          float:right;
          margin-right:18%;
      }
     .tabPanel{
-        
         margin-left:15%;
         width:70%;
     } 
@@ -131,5 +131,14 @@
         font-family:'Ubuntu',sans-serif;
         font-size:20px;
     }
-    </style>
-</apex:page>
+    #footerImage{
+        background-image:url("https://lh4.googleusercontent.com/-sGks2m-eVtc/VUsrUf3tDiI/AAAAAAAAAZs/QQKZ2BAG5Hw/w1039-h92-no/footer%2Blogo.png");
+        background-repeat:repeat-x;
+        min-height:100px;
+    }
+    #error, #body, #footerImage{
+        margin-top:20px;
+    }
+    #footer{
+        min-height:155px;
+    }
