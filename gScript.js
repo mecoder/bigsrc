@@ -1,4 +1,5 @@
-function validate(btnId){
+<script type="text/javascript">
+        function validate(btnId){
            
             switch(btnId){
                 case "j_id0:form:orgBtn":
@@ -34,55 +35,44 @@ function validate(btnId){
         }
         
         function validateOrg(){
-            alert("orgBtn");
             return true;
         }
         function validateCom(){
-            alert("comBtn");
             return true;
         }
         function validateContact(){
-            alert("contactBtn");
             return true;
         }
         function validateProject(){
-            alert("projectBtn");
             return true;
         }
         function validateFund(){
-            alert("fundBtn");
             return true;
         }
         function validateDates(){
-            alert('hi');
+            return true;
         }
         function validateOutcomes(){
-            alert("outcomesBtn");
             return true;
         }
         function validateSubmit(){
             var chkBx= document.getElementById("j_id0:form:chkBx").checked;
             if(chkBx){
-                alert("Checked");
                 return true;
             }
             else
-                alert("Please, click on the checkbox to proceed");
+                alert("Please, confirm to proceed");
             return false;
+        }
+        function enableCR(){
+            document.getElementById("capital").className='unhide';
+            document.getElementById("revenue").className='unhide';
         }
         function redirect1(){
             alert("Redirecting to Login Page...");
             return true;
         }
-        function disableOrgTab(){
-            document.getElementById("j_id0:form:orgNm").disbaled=true;
-        }
         function getId(id){
             alert("id-> "+id);
         }
-        function disableTab(){
-            alert('Hi ');
-            if(document.getElementById("j_id0:form:orgNm").value!==""){
-                document.getElementById("j_id0:form:orgNm").disabled=true;
-            }
-        }
+    </script>
